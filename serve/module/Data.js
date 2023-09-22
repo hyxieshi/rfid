@@ -5,8 +5,10 @@ const Data = new Schema({
   title: { type: String, required: true },
   imgurl: { type: String, required: false },
   videourl: { type: String, required: false },
+},{
+  timestamps: true
 });
-const data = model("User", Data);
+const data = model("Datas", Data);
 export default data;
 
 /**

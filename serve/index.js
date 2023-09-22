@@ -6,6 +6,7 @@ import mongoose from "./db.js";
 import { getAllData, getDataById, postOneData } from "./contollers/data.js";
 import { saveFile, readFile } from "./util/File.js";
 import fs from "fs";
+import { getAllUser } from "./contollers/user.js";
 
 const PATH = "C:/Users/303/Desktop/rfid/serve/data/";
 
@@ -17,6 +18,27 @@ app.use(koaBody({ multipart: true }));
 // -----------------------------------------------------------------路由-------------------------------------------
 const route = new Router({
   //prefix: "/api", //配置统一前缀
+});
+/**
+ * 获取所有id列表
+ */
+route.get("/idList", async (ctx) => {
+  ctx.status = 200;
+  ctx.body = await getAllUser();
+});
+/**
+ * 新增一条用户
+ */
+route.post("/addUser", async (ctx) => {
+  console.log(ctx.request)
+  const { rfid, name, remark } = ctx.request.body;
+  
+  ctx.status = 200;
+  ctx.body = await addUser({
+    rfid,
+    name,
+    remark,
+  });
 });
 /**
  * 获取所有数据

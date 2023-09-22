@@ -20,16 +20,10 @@ export async function getDataById(id) {
  * 根据id提交数据
  */
 export async function postOneData(item) {
-  const day = new Date();
-  const year = day.getFullYear()
-  const month = (day.getMonth() + 1)<10 ? '0'+(day.getMonth() + 1) : (day.getMonth() + 1);
-  const date = day.getDate()<10 ? '0'+day.getDate() : day.getDate();
-  const time = year + '-' + month + '-' + date;
   return await data.create({
     rfid: item.rfid,
     title: item.title,
     imgurl: item.imgurl,
-    videourl: item.videourl,
-    time
+    videourl: item.videourl
   });
 }
