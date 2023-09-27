@@ -6,7 +6,7 @@ const Data = new Schema({
   imgurl: { type: String, required: false },
   videourl: { type: String, required: false },
 },{
-  timestamps: true
+  timestamps: true,
 });
 const data = model("Datas", Data);
 export default data;

@@ -10,8 +10,16 @@ export async function getAllUser() {
 /**
  * 新增用户
  */
-export async function addUser(user) {
-    return await user.create(user);
+export async function addUser(item) {
+    // console.log(user);
+    await user.findOne({rfid: item.rfid})
+    return await user.create(item);
+}
+/**
+ * 查询是不是在数据库
+ */
+export async function isUser(rfid){
+    return await user.findOne({'rfid':rfid});
 }
 
 

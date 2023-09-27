@@ -3,11 +3,11 @@ import { Schema, model } from "mongoose";
 const User = new Schema(
   {
     rfid: { type: String, required: true },
-    name: { type: String, required: true },
+    name: { type: String, required: false },
     remark: { type: String, required: false },
   },
   {
-    timeseries: true,
+    timestamps: true
   }
 );
 const user = model("Users", User);
