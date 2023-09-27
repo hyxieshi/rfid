@@ -5,7 +5,7 @@ import admin from "../module/Admin.js";
  * @param {*} body
  * @returns
  */
-export async function addUser(body) {
+export async function addAdminUser(body) {
   return await admin.create(body);
 }
 
@@ -14,15 +14,21 @@ export async function addUser(body) {
  */
 export async function updatePassword(body) {
   let user = await getUserInfo(body.user);
-  user.pass == body.pass && (user.pass = body.newpass) && (await user.save());
-  return user;
+  console.log(user,body)
+
+  if(user.pass == body.pass){
+    user.pass = body.newpass
+    await user.save()
+    return true
+  }
+  return false
 }
 
 /**
  * 查询用户信息
  */
 export async function getUserInfo(username) {
-  return await admin.find({ user: username });
+  return await admin.findOne({ user: username });
 }
 /**
  * 修改是否启动密码校验

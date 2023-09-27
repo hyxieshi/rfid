@@ -12,6 +12,7 @@ import {
   login,
   updateIsCheckPassword,
   updatePassword,
+  addAdminUser,
 } from "./contollers/admin.js";
 
 const PATH = "C:/Users/303/Desktop/rfid/serve/data/";
@@ -109,7 +110,8 @@ route.get("/login", async (ctx) => {
 });
 //修改密码校验
 route.post("/passState", async (ctx) => {
-  return await updateIsCheckPassword({
+  ctx.status = 200;
+  ctx.body = await updateIsCheckPassword({
     user: ctx.request.body.user,
     state: ctx.request.body.state,
   });
@@ -120,12 +122,15 @@ route.get("/userInfo", async (ctx) => {
 });
 //修改密码
 route.post("/updatePass", async (ctx) => {
-  return await updatePassword(ctx.request.body);
+  ctx.status = 200;
+  ctx.body = await updatePassword(ctx.request.body);
 });
 //创建用户
-route.post("/createUser", async ctx=>{
-  return await addUser(ctx.request.body);
-})
+route.post("/createUser", async (ctx) => {
+  // console.log(ctx.request.body)
+  ctx.status = 200;
+  ctx.body = await addAdminUser(ctx.request.body);
+});
 
 app.use(route.routes());
 app.use(route.allowedMethods());
