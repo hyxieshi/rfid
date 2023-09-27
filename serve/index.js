@@ -7,6 +7,12 @@ import { getAllData, getDataById, postOneData } from "./contollers/data.js";
 import { saveFile, readFile } from "./util/File.js";
 import fs from "fs";
 import { getAllUser, addUser, getIdUser, isUser } from "./contollers/user.js";
+import {
+  getUserInfo,
+  login,
+  updateIsCheckPassword,
+  updatePassword,
+} from "./contollers/admin.js";
 
 const PATH = "C:/Users/303/Desktop/rfid/serve/data/";
 
@@ -74,49 +80,52 @@ route.get("/idList", async (ctx) => {
 
 route.post("/postUser", async (ctx) => {
   console.log("postUser");
-  console.log(ctx.request.body)
+  console.log(ctx.request.body);
   const { rfid, name, remark } = ctx.request.body;
-  if(await isUser(rfid)){
+  if (await isUser(rfid)) {
     ctx.status = 200;
     ctx.body = {
       code: 500,
       message: "用户已存在",
-    }
-  }else{
+    };
+  } else {
     ctx.status = 200;
-    ctx.body = await addUser({ rfid, name, remark})
+    ctx.body = await addUser({ rfid, name, remark });
   }
- 
-  
-  // //查询是否以接入
-  // isUser(rfid)
-  //   .then((res) => {
-  //     console.log(res)
-  //     ctx.status = 200;
-  //     ctx.body = {
-  //       code: 500,
-  //       message: "用户已存在",
-  //     }
-  //   })
-  //   .catch((err) => {
-  //     //未接入 将插入
-  //     addUser({ rfid, name, remark}).then((item) => {
-  //       ctx.status = 200;
-  //       ctx.body = item;
-  //     });
-  //   });
-  // try{
-  //   body =
-  // }catch(e){
-  //   console.log(e)
-  //   body = JSON.stringify(e)
-  // }
 });
 
 route.get("/getUser", async (ctx) => {
   ctx.status = 200;
   ctx.body = await getIdUser(ctx.query.id);
 });
+
+// -----------------------------------------------admin 用户操作------------------------
+//登录
+route.get("/login", async (ctx) => {
+  return await login({
+    user: ctx.query.user,
+    pass: ctx.query.pass,
+  });
+});
+//修改密码校验
+route.post("/passState", async (ctx) => {
+  return await updateIsCheckPassword({
+    user: ctx.request.body.user,
+    state: ctx.request.body.state,
+  });
+});
+//查询用户信息
+route.get("/userInfo", async (ctx) => {
+  return await getUserInfo(ctx.query.user);
+});
+//修改密码
+route.post("/updatePass", async (ctx) => {
+  return await updatePassword(ctx.request.body);
+});
+//创建用户
+route.post("/createUser", async ctx=>{
+  return await addUser(ctx.request.body);
+})
 
 app.use(route.routes());
 app.use(route.allowedMethods());
