@@ -14,6 +14,7 @@ import {
   updatePassword,
   addAdminUser,
 } from "./contollers/admin.js";
+import { start } from "repl";
 
 const PATH = "C:/Users/303/Desktop/rfid/serve/data/";
 
@@ -119,7 +120,9 @@ route.del('/deleteUser', async (ctx) => {
 // -----------------------------------------------admin 用户操作------------------------
 //登录
 route.get("/login", async (ctx) => {
-  return await login({
+  console.log("login")
+  ctx.status = 200
+  ctx.body = await login({
     user: ctx.query.user,
     pass: ctx.query.pass,
   });
@@ -134,7 +137,10 @@ route.post("/passState", async (ctx) => {
 });
 //查询用户信息
 route.get("/userInfo", async (ctx) => {
-  return await getUserInfo(ctx.query.user);
+  ctx.status = 200;
+  let user = await getUserInfo(ctx.query.user);
+  console.log(user)
+  ctx.body = user.state
 });
 //修改密码
 route.post("/updatePass", async (ctx) => {

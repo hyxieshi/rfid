@@ -1,0 +1,66 @@
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Application.listen (C:\Users\303\Desktop\rfid\serve\node_modules\koa\lib\application.js:88:19)
+    at file:///C:/Users/303/Desktop/rfid/serve/index.js:211:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1767:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v18.16.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Application.listen (C:\Users\303\Desktop\rfid\serve\node_modules\koa\lib\application.js:88:19)
+    at file:///C:/Users/303/Desktop/rfid/serve/index.js:211:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1767:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v18.16.1
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Application.listen (C:\Users\303\Desktop\rfid\serve\node_modules\koa\lib\application.js:88:19)
+    at file:///C:/Users/303/Desktop/rfid/serve/index.js:211:5
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1767:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v18.16.1

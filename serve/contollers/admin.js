@@ -33,7 +33,8 @@ export async function getUserInfo(username) {
  */
 export async function updateIsCheckPassword(body) {
   let user = await getUserInfo(body.user);
-  user.state = body.state && (await user.save());
+  user.state = body.state 
+  await user.save()
   return user;
 }
 /**
@@ -41,9 +42,15 @@ export async function updateIsCheckPassword(body) {
  */
 export async function login(body) {
     let user = await getUserInfo(body.user);
-    if(user.pass == body.pass){
-        return true
+    if(user){
+      console.log(user.pass)
+      if(user.pass == body.pass){
+          return user
+      }else{
+          return false
+      }
     }else{
-        return false
+      return false
     }
+    
 }

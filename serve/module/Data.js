@@ -4,7 +4,7 @@ const Data = new Schema({
   rfid: { type: String, required: true },
   title: { type: String, required: true },
   imgurl: { type: String, required: false },
-  videourl: { type: String, required: false },
+  videourl: { type: Array, required: false },
 },{
   timestamps: true,
 });

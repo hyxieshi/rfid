@@ -1,0 +1,4 @@
+2023-10-01 01:27:09 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\303\Desktop\rfid\serve\node_modules\node-windows\lib\wrapper.js --file C:\Users\303\Desktop\rfid\serve\index.js --scriptoptions= --log "My Node.js Service wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-01 01:27:09 - Started 12024
+2023-10-01 01:31:15 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\303\Desktop\rfid\serve\node_modules\node-windows\lib\wrapper.js --file C:\Users\303\Desktop\rfid\serve\index.js --scriptoptions= --log "My Node.js Service wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-01 01:31:15 - Started 2676
