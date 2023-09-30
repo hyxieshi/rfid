@@ -1,3 +1,4 @@
 安装包
 data
 serve/data/*
+serve/node_modules
