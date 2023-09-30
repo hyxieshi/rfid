@@ -13,7 +13,21 @@ export async function getAllData() {
  * 根据rfid查数据
  */
 export async function getDataById(id) {
-  return await data.find({ rfid: id }).sort({ createdAt: -1 });
+  let date = await data.find({ rfid: id }).sort({ createdAt: -1 });
+  console.log(date.length)
+  if(date.length >0){
+    let r = date.map((item=>{
+      return Object.assign({},item._doc, {
+        createdAtChina: item.createdAtChinaTime,
+        updatedAtChina: item.updatedAtChinaTime,
+      });
+    }))
+    console.log(r)
+  return r
+
+  }
+  
+  return date
 }
 
 /**
@@ -26,4 +40,10 @@ export async function postOneData(item) {
     imgurl: item.imgurl,
     videourl: item.videourl
   });
+}
+/**
+ * 清除rfid是id 的所有记录
+ */
+export async function deleteDataById(id) {
+  return await data.deleteMany({ rfid: id });
 }

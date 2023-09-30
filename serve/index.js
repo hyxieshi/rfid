@@ -3,10 +3,10 @@ import { koaBody } from "koa-body";
 import Router from "koa-router";
 import cors from "koa2-cors";
 import mongoose from "./db.js";
-import { getAllData, getDataById, postOneData } from "./contollers/data.js";
+import { deleteDataById, getAllData, getDataById, postOneData } from "./contollers/data.js";
 import { saveFile, readFile } from "./util/File.js";
 import fs from "fs";
-import { getAllUser, addUser, getIdUser, isUser } from "./contollers/user.js";
+import { getAllUser, addUser, getIdUser, isUser, updateUser, deleteUser } from "./contollers/user.js";
 import {
   getUserInfo,
   login,
@@ -99,6 +99,22 @@ route.get("/getUser", async (ctx) => {
   ctx.status = 200;
   ctx.body = await getIdUser(ctx.query.id);
 });
+route.get('/updateIdUser', async (ctx) => {
+  ctx.status = 200;
+  ctx.body = await updateUser(ctx.query.id, ctx.query.rfid)
+})
+/**
+ * 清除用户及历史信息
+ * {
+	"acknowledged": true,
+	"deletedCount": 1
+}
+ */
+route.del('/deleteUser', async (ctx) => {
+  ctx.status = 200;
+  let id = await deleteUser(ctx.query.id)
+  ctx.body =await deleteDataById(id)
+})
 
 // -----------------------------------------------admin 用户操作------------------------
 //登录

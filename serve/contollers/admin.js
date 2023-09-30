@@ -14,8 +14,6 @@ export async function addAdminUser(body) {
  */
 export async function updatePassword(body) {
   let user = await getUserInfo(body.user);
-  console.log(user,body)
-
   if(user.pass == body.pass){
     user.pass = body.newpass
     await user.save()
