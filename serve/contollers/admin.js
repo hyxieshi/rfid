@@ -32,6 +32,7 @@ export async function getUserInfo(username) {
  * 修改是否启动密码校验
  */
 export async function updateIsCheckPassword(body) {
+  console.log(body)
   let user = await getUserInfo(body.user);
   user.state = body.state 
   await user.save()

@@ -64,3 +64,182 @@ Emitted 'error' event on Server instance at:
 }
 
 Node.js v18.16.1
+Error: ENOENT: no such file or directory, open
+    at Object.openSync (node:fs:601:3)
+    at Object.readFileSync (node:fs:469:35)
+    at readFile (file:///C:/Users/303/Desktop/rfid/serve/util/File.js:55:21)
+    at file:///C:/Users/303/Desktop/rfid/serve/index.js:67:9
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:425:16
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:430:31)
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32) {
+  errno: -4058,
+  syscall: 'open',
+  code: 'ENOENT'
+}
+Error: ENOENT: no such file or directory, open
+    at Object.openSync (node:fs:601:3)
+    at Object.readFileSync (node:fs:469:35)
+    at readFile (file:///C:/Users/303/Desktop/rfid/serve/util/File.js:55:21)
+    at file:///C:/Users/303/Desktop/rfid/serve/index.js:67:9
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:425:16
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:430:31)
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32) {
+  errno: -4058,
+  syscall: 'open',
+  code: 'ENOENT'
+}
+Error: ENOENT: no such file or directory, open
+    at Object.openSync (node:fs:601:3)
+    at Object.readFileSync (node:fs:469:35)
+    at readFile (file:///C:/Users/303/Desktop/rfid/serve/util/File.js:55:21)
+    at file:///C:/Users/303/Desktop/rfid/serve/index.js:67:9
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:425:16
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:430:31)
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32) {
+  errno: -4058,
+  syscall: 'open',
+  code: 'ENOENT'
+}
+Error: ENOENT: no such file or directory, open
+    at Object.openSync (node:fs:601:3)
+    at Object.readFileSync (node:fs:469:35)
+    at readFile (file:///C:/Users/303/Desktop/rfid/serve/util/File.js:55:21)
+    at file:///C:/Users/303/Desktop/rfid/serve/index.js:67:9
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:425:16
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:430:31)
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32) {
+  errno: -4058,
+  syscall: 'open',
+  code: 'ENOENT'
+}
+Error: ENOENT: no such file or directory, open
+    at Object.openSync (node:fs:601:3)
+    at Object.readFileSync (node:fs:469:35)
+    at readFile (file:///C:/Users/303/Desktop/rfid/serve/util/File.js:55:21)
+    at file:///C:/Users/303/Desktop/rfid/serve/index.js:67:9
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:425:16
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:430:31)
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32) {
+  errno: -4058,
+  syscall: 'open',
+  code: 'ENOENT'
+}
+Error: ENOENT: no such file or directory, open
+    at Object.openSync (node:fs:601:3)
+    at Object.readFileSync (node:fs:469:35)
+    at readFile (file:///C:/Users/303/Desktop/rfid/serve/util/File.js:55:21)
+    at file:///C:/Users/303/Desktop/rfid/serve/index.js:67:9
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:425:16
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:430:31)
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32) {
+  errno: -4058,
+  syscall: 'open',
+  code: 'ENOENT'
+}
+Error: ENOENT: no such file or directory, open
+    at Object.openSync (node:fs:601:3)
+    at Object.readFileSync (node:fs:469:35)
+    at readFile (file:///C:/Users/303/Desktop/rfid/serve/util/File.js:55:21)
+    at file:///C:/Users/303/Desktop/rfid/serve/index.js:67:9
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:425:16
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:430:31)
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32) {
+  errno: -4058,
+  syscall: 'open',
+  code: 'ENOENT'
+}
+Error: ENOENT: no such file or directory, open 'C:/Users/33/Desktop/rfid/serve/data/1696170833764.mp4'
+    at Object.openSync (node:fs:601:3)
+    at Object.readFileSync (node:fs:469:35)
+    at readFile (file:///C:/Users/303/Desktop/rfid/serve/util/File.js:55:21)
+    at file:///C:/Users/303/Desktop/rfid/serve/index.js:67:9
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:425:16
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:430:31)
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32) {
+  errno: -4058,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: 'C:/Users/33/Desktop/rfid/serve/data/1696170833764.mp4'
+}
+Error: ENOENT: no such file or directory, open
+    at Object.openSync (node:fs:601:3)
+    at Object.readFileSync (node:fs:469:35)
+    at readFile (file:///C:/Users/303/Desktop/rfid/serve/util/File.js:55:21)
+    at file:///C:/Users/303/Desktop/rfid/serve/index.js:67:9
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:425:16
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:430:31)
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32) {
+  errno: -4058,
+  syscall: 'open',
+  code: 'ENOENT'
+}
+
+  TypeError: Cannot set properties of null (setting 'state')
+      at updateIsCheckPassword (file:///C:/Users/303/Desktop/rfid/serve/contollers/admin.js:37:14)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/303/Desktop/rfid/serve/index.js:134:14
+      at async cors (C:\Users\303\Desktop\rfid\serve\node_modules\koa2-cors\dist\index.js:91:9)
+
+
+  TypeError: Cannot set properties of null (setting 'state')
+      at updateIsCheckPassword (file:///C:/Users/303/Desktop/rfid/serve/contollers/admin.js:37:14)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/303/Desktop/rfid/serve/index.js:134:14
+      at async cors (C:\Users\303\Desktop\rfid\serve\node_modules\koa2-cors\dist\index.js:91:9)
+
+
+  TypeError: Cannot set properties of null (setting 'state')
+      at updateIsCheckPassword (file:///C:/Users/303/Desktop/rfid/serve/contollers/admin.js:37:14)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/303/Desktop/rfid/serve/index.js:134:14
+      at async cors (C:\Users\303\Desktop\rfid\serve\node_modules\koa2-cors\dist\index.js:91:9)
+
+
+  TypeError: Cannot set properties of null (setting 'state')
+      at updateIsCheckPassword (file:///C:/Users/303/Desktop/rfid/serve/contollers/admin.js:37:14)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/303/Desktop/rfid/serve/index.js:134:14
+      at async cors (C:\Users\303\Desktop\rfid\serve\node_modules\koa2-cors\dist\index.js:91:9)
+
+Error: ENOENT: no such file or directory, open
+    at Object.openSync (node:fs:601:3)
+    at Object.readFileSync (node:fs:469:35)
+    at readFile (file:///C:/Users/303/Desktop/rfid/serve/util/File.js:55:21)
+    at file:///C:/Users/303/Desktop/rfid/serve/index.js:67:9
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:425:16
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:34:12
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-router\lib\router.js:430:31)
+    at dispatch (C:\Users\303\Desktop\rfid\serve\node_modules\koa-compose\index.js:42:32) {
+  errno: -4058,
+  syscall: 'open',
+  code: 'ENOENT'
+}

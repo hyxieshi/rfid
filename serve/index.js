@@ -3,6 +3,7 @@ import { koaBody } from "koa-body";
 import Router from "koa-router";
 import cors from "koa2-cors";
 import mongoose from "./db.js";
+import serve from "koa-static"
 import { deleteDataById, getAllData, getDataById, postOneData } from "./contollers/data.js";
 import { saveFile, readFile } from "./util/File.js";
 import fs from "fs";
@@ -14,19 +15,20 @@ import {
   updatePassword,
   addAdminUser,
 } from "./contollers/admin.js";
-import { start } from "repl";
 
 const PATH = "C:/Users/303/Desktop/rfid/serve/data/";
 
 const app = new Koa();
 
 app.use(cors());
+app.use(serve('./dist'))
+
 app.use(koaBody({ multipart: true }));
 
 // -----------------------------------------------------------------路由-------------------------------------------
 
 const route = new Router({
-  //prefix: "/api", //配置统一前缀
+  prefix: "/api", //配置统一前缀
 });
 
 // -------------------------数据查询--------------------------------
@@ -113,6 +115,7 @@ route.get('/updateIdUser', async (ctx) => {
  */
 route.del('/deleteUser', async (ctx) => {
   ctx.status = 200;
+  console.log("================================",ctx.query.id)
   let id = await deleteUser(ctx.query.id)
   ctx.body =await deleteDataById(id)
 })
@@ -129,6 +132,7 @@ route.get("/login", async (ctx) => {
 });
 //修改密码校验
 route.post("/passState", async (ctx) => {
+  console.log(ctx.request.body.user,ctx.request.body.state)
   ctx.status = 200;
   ctx.body = await updateIsCheckPassword({
     user: ctx.request.body.user,
@@ -156,7 +160,6 @@ route.post("/createUser", async (ctx) => {
 
 app.use(route.routes());
 app.use(route.allowedMethods());
-
 // ------------------------------------------------------------本地数据存储-----------------------------
 
 /**

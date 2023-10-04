@@ -4,7 +4,19 @@ import user from "../module/User.js";
  * 获取所有用户
  */
 export async function getAllUser() {
-  return await user.find();
+  let data = await user.find();
+  if (data.length > 0) {
+    let r = data.map((item) => {
+      return Object.assign({}, item._doc, {
+        createdAtChina: item.createdAtChinaTime,
+        updatedAtChina: item.updatedAtChinaTime,
+      });
+    });
+    console.log(r);
+    return r;
+  }
+
+  return data;
 }
 
 /**
@@ -28,11 +40,11 @@ export async function isUser(rfid) {
 export async function getIdUser(id) {
   console.log("id", id);
   let date = await user.findOne({ rfid: id });
-  if(date) {
-    date = Object.assign({},date._doc, {
-        createdAtChina: date.createdAtChinaTime,
-        updatedAtChina: date.updatedAtChinaTime,
-      });
+  if (date) {
+    date = Object.assign({}, date._doc, {
+      createdAtChina: date.createdAtChinaTime,
+      updatedAtChina: date.updatedAtChinaTime,
+    });
   }
 
   console.log("date", date);
@@ -46,10 +58,17 @@ export async function getIdUser(id) {
  */
 export async function updateUser(id, rfid) {
   try {
-    let date = await getIdUser(id);
-    date.rfid = rfid;
-    await date.save();
-    return true;
+    const res = await user.updateOne({ rfid: id }, { $set: { rfid: rfid } });
+    if(res.matchedCount > 0){
+      return true
+    }else{
+      return false
+    }
+    // let date = await getIdUser(id);
+    // console.log("date", date);
+    // date.rfid = rfid;
+    // await date.save();
+    // return true;
   } catch (error) {
     return false;
   }
@@ -58,10 +77,14 @@ export async function updateUser(id, rfid) {
  * 清除某用户
  */
 export async function deleteUser(id) {
+  console.log("delete user", id);
   try {
     let date = await getIdUser(id);
     let _id = date._id;
-    await date.deleteOne();
+    
+    let res = await user.deleteOne({_id: _id});
+    console.log("date", res);
+
     return _id.toString();
   } catch (error) {
     return false;

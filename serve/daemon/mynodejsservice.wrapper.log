@@ -2,3 +2,113 @@
 2023-10-01 01:27:09 - Started 12024
 2023-10-01 01:31:15 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\303\Desktop\rfid\serve\node_modules\node-windows\lib\wrapper.js --file C:\Users\303\Desktop\rfid\serve\index.js --scriptoptions= --log "My Node.js Service wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
 2023-10-01 01:31:15 - Started 2676
+2023-10-01 02:24:54 - Stopping mynodejsservice.exe
+2023-10-01 02:24:54 - ProcessKill 2676
+2023-10-01 02:24:54 - Shutdown exception
+Message:系统正在关机。
+
+Stacktrace:   在 System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   在 System.Management.ManagementScope.InitializeGuts(Object o)
+   在 System.Management.ManagementScope.Initialize()
+   在 System.Management.ManagementObjectSearcher.Initialize()
+   在 System.Management.ManagementObjectSearcher.Get()
+   在 winsw.WrapperService.GetChildPids(Int32 pid)
+   在 winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   在 winsw.WrapperService.StopIt()
+   在 winsw.WrapperService.OnShutdown()
+2023-10-01 11:10:31 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\303\Desktop\rfid\serve\node_modules\node-windows\lib\wrapper.js --file C:\Users\303\Desktop\rfid\serve\index.js --scriptoptions= --log "My Node.js Service wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-01 11:10:31 - Started 4324
+2023-10-01 14:31:28 - Stopping mynodejsservice.exe
+2023-10-01 14:31:28 - ProcessKill 4324
+2023-10-01 14:31:28 - Shutdown exception
+Message:系统正在关机。
+
+Stacktrace:   在 System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   在 System.Management.ManagementScope.InitializeGuts(Object o)
+   在 System.Management.ManagementScope.Initialize()
+   在 System.Management.ManagementObjectSearcher.Initialize()
+   在 System.Management.ManagementObjectSearcher.Get()
+   在 winsw.WrapperService.GetChildPids(Int32 pid)
+   在 winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   在 winsw.WrapperService.StopIt()
+   在 winsw.WrapperService.OnShutdown()
+2023-10-01 14:31:47 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\303\Desktop\rfid\serve\node_modules\node-windows\lib\wrapper.js --file C:\Users\303\Desktop\rfid\serve\index.js --scriptoptions= --log "My Node.js Service wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-01 14:31:48 - Started 5068
+2023-10-01 18:00:42 - Stopping mynodejsservice.exe
+2023-10-01 18:00:42 - ProcessKill 5068
+2023-10-01 18:00:42 - Found child process: 5132 Name: conhost.exe
+2023-10-01 18:00:42 - Found child process: 5424 Name: node.exe
+2023-10-01 18:00:42 - Stopping process 5132
+2023-10-01 18:00:42 - Send SIGINT 5132
+2023-10-01 18:00:42 - SIGINT to 5132 failed - Killing as fallback
+2023-10-01 18:00:42 - Stopping process 5424
+2023-10-01 18:00:42 - Send SIGINT 5424
+2023-10-01 18:00:42 - SIGINT to 5424 failed - Killing as fallback
+2023-10-01 18:00:42 - Stopping process 5068
+2023-10-01 18:00:42 - Send SIGINT 5068
+2023-10-01 18:00:42 - SIGINT to 5068 failed - Killing as fallback
+2023-10-01 18:00:42 - Finished mynodejsservice.exe
+2023-10-01 18:02:37 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\303\Desktop\rfid\serve\node_modules\node-windows\lib\wrapper.js --file C:\Users\303\Desktop\rfid\serve\index.js --scriptoptions= --log "My Node.js Service wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-01 18:02:37 - Started 18848
+2023-10-01 19:08:55 - Stopping mynodejsservice.exe
+2023-10-01 19:08:55 - ProcessKill 18848
+2023-10-01 19:08:55 - Shutdown exception
+Message:系统正在关机。
+
+Stacktrace:   在 System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   在 System.Management.ManagementScope.InitializeGuts(Object o)
+   在 System.Management.ManagementScope.Initialize()
+   在 System.Management.ManagementObjectSearcher.Initialize()
+   在 System.Management.ManagementObjectSearcher.Get()
+   在 winsw.WrapperService.GetChildPids(Int32 pid)
+   在 winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   在 winsw.WrapperService.StopIt()
+   在 winsw.WrapperService.OnShutdown()
+2023-10-01 21:35:51 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\303\Desktop\rfid\serve\node_modules\node-windows\lib\wrapper.js --file C:\Users\303\Desktop\rfid\serve\index.js --scriptoptions= --log "My Node.js Service wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-01 21:35:51 - Started 3384
+2023-10-02 00:27:28 - Stopping mynodejsservice.exe
+2023-10-02 00:27:28 - ProcessKill 3384
+2023-10-02 00:27:28 - Found child process: 5128 Name: conhost.exe
+2023-10-02 00:27:28 - Found child process: 5424 Name: node.exe
+2023-10-02 00:27:28 - Stopping process 5128
+2023-10-02 00:27:28 - Send SIGINT 5128
+2023-10-02 00:27:28 - SIGINT to 5128 failed - Killing as fallback
+2023-10-02 00:27:28 - Stopping process 5424
+2023-10-02 00:27:28 - Send SIGINT 5424
+2023-10-02 00:27:28 - SIGINT to 5424 failed - Killing as fallback
+2023-10-02 00:27:28 - Stopping process 3384
+2023-10-02 00:27:28 - Send SIGINT 3384
+2023-10-02 00:27:28 - SIGINT to 3384 failed - Killing as fallback
+2023-10-02 00:27:28 - Finished mynodejsservice.exe
+2023-10-02 12:10:58 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\303\Desktop\rfid\serve\node_modules\node-windows\lib\wrapper.js --file C:\Users\303\Desktop\rfid\serve\index.js --scriptoptions= --log "My Node.js Service wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-02 12:10:58 - Started 5088
+2023-10-02 12:25:43 - Stopping mynodejsservice.exe
+2023-10-02 12:25:43 - ProcessKill 5088
+2023-10-02 12:25:43 - Shutdown exception
+Message:系统正在关机。
+
+Stacktrace:   在 System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   在 System.Management.ManagementScope.InitializeGuts(Object o)
+   在 System.Management.ManagementScope.Initialize()
+   在 System.Management.ManagementObjectSearcher.Initialize()
+   在 System.Management.ManagementObjectSearcher.Get()
+   在 winsw.WrapperService.GetChildPids(Int32 pid)
+   在 winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   在 winsw.WrapperService.StopIt()
+   在 winsw.WrapperService.OnShutdown()
+2023-10-04 22:45:14 - Starting C:\Program Files\nodejs\node.exe  --harmony --max_old_space_size=4096 C:\Users\303\Desktop\rfid\serve\node_modules\node-windows\lib\wrapper.js --file C:\Users\303\Desktop\rfid\serve\index.js --scriptoptions= --log "My Node.js Service wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-10-04 22:45:14 - Started 5388
+2023-10-05 01:08:39 - Stopping mynodejsservice.exe
+2023-10-05 01:08:39 - ProcessKill 5388
+2023-10-05 01:08:39 - Found child process: 5460 Name: conhost.exe
+2023-10-05 01:08:39 - Found child process: 5780 Name: node.exe
+2023-10-05 01:08:39 - Stopping process 5460
+2023-10-05 01:08:39 - Send SIGINT 5460
+2023-10-05 01:08:39 - SIGINT to 5460 failed - Killing as fallback
+2023-10-05 01:08:39 - Stopping process 5780
+2023-10-05 01:08:39 - Send SIGINT 5780
+2023-10-05 01:08:39 - SIGINT to 5780 failed - Killing as fallback
+2023-10-05 01:08:39 - Stopping process 5388
+2023-10-05 01:08:39 - Send SIGINT 5388
+2023-10-05 01:08:39 - SIGINT to 5388 failed - Killing as fallback
+2023-10-05 01:08:39 - Finished mynodejsservice.exe
